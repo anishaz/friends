@@ -1,9 +1,6 @@
 let express = require("express");
 let app = express();
 
-let mongoose = require("mongoose");
-mongoose.connect('mongodb://localhost/friends');
-
 let path = require("path");
 
 let morgan = require("morgan");
