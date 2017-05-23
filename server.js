@@ -6,6 +6,9 @@ mongoose.connect('mongodb://localhost/friends');
 
 let path = require("path");
 
+let morgan = require("morgan");
+app.use(morgan('dev'));
+
 let bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
