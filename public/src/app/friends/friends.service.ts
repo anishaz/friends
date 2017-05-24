@@ -10,5 +10,5 @@ export class FriendsService {
   getFriends(){
   	return this._http.get('/api/friends').map( (friends: Response) => friends.json() ).toPromise();
   }
-  
+
 }
