@@ -9,6 +9,7 @@ import { FriendsListComponent } from './friends/friends-list/friends-list.compon
 import { FriendsNewComponent } from './friends/friends-new/friends-new.component';
 import { FriendsEditComponent } from './friends/friends-edit/friends-edit.component';
 import { FriendsShowComponent } from './friends/friends-show/friends-show.component';
+import { FriendsService } from './friends/friends.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { FriendsShowComponent } from './friends/friends-show/friends-show.compon
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [FriendsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
